@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 350px;
+  height: 100vh;
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  background-image: linear-gradient(to right top, red, blue);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  padding-top: 40px;
+}
+
+#header-el {
+  text-align: center;
+  color: #5f9341;
+  padding-bottom: 20px;
+}
+
+#input-el {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 1px solid #5f9341;
+  padding-inline-start: 10px;
+  padding-inline-end: 60px;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+/* #input-el:active {
+  background-color: lightgreen;
+} */
+
+.cont {
+  background-color: black;
+  height: 40px;
+  width: 40px;
+}
+
+div.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+
+div.input i {
+  font-size: 50px;
+  position: relative;
+  right: 45px;
+  color: green;
+  cursor: pointer;
+}
+
+#input-btn:active {
+  font-size: 45px;
+}
+
+#checkbox {
+  position: relative;
+  left: 15px;
+}
+
+#check-el {
+  padding-left: 15px;
+}
+
+#check-el label {
+  text-transform: capitalize;
+  color: white;
+  font-weight: 500;
+  transition: ease-in-out 1s;
+}
+
+#trashcan {
+  color: green;
+  text-align: center;
+  width: 100%;
+  font-size: 40px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#trashcan:active {
+  font-size: 30px;
+}
+
+/* strikethrough across text when the box is ticked */
+input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  font-size: 18px;
+  color: red !important;
+  transition: all 0.5s !important;
+}

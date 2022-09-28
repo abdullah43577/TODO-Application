@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="icon" href="todo.ico" />
+    <script
+      src="https://kit.fontawesome.com/37007fa821.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>TODO</title>
+  </head>
+  <body>
+    <header>
+      <h4 id="header-el">To-Do Lists For Today</h4>
+      <div class="input">
+        <input type="text" id="input-el" />
+        <!-- button for adding contents to the DOM -->
+        <i class="fa-solid fa-circle-plus" id="input-btn"></i>
+      </div>
+
+      <div>
+        <form id="check-el">
+          <input
+            type="checkbox"
+            id="check"
+            name="todo"
+            value="coding"
+            disabled="disabled"
+          />
+          <label for="check">To-Do Lists For Today</label>
+          <br />
+        </form>
+      </div>
+      <i class="fa-solid fa-trash" id="trashcan"></i>
+    </header>
+    <script src="index.js"></script>
+  </body>
+</html>
