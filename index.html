@@ -14,27 +14,31 @@
   </head>
   <body>
     <header>
-      <h4 id="header-el">To-Do Lists For Today</h4>
-      <div class="input">
-        <input type="text" id="input-el" />
-        <!-- button for adding contents to the DOM -->
-        <i class="fa-solid fa-circle-plus" id="input-btn"></i>
-      </div>
+      <div class="card">
+        <h3 id="header-el">To-Do Lists For Today</h3>
+        <h5 id="header-el2"></h5>
+        <div class="input">
+          <input type="text" id="input-el" />
+          <!-- button for adding contents to the DOM -->
+          <i class="fa-solid fa-circle-plus" id="input-btn"></i>
+          <!-- <i class="fa-solid fa-trash" id="trashcan"></i> -->
+        </div>
 
-      <div>
-        <form id="check-el">
-          <input
-            type="checkbox"
-            id="check"
-            name="todo"
-            value="coding"
-            disabled="disabled"
-          />
-          <label for="check">To-Do Lists For Today</label>
-          <br />
-        </form>
+        <div>
+          <form id="check-el">
+            <input
+              type="checkbox"
+              id="check"
+              name="todo"
+              value="coding"
+              disabled="disabled"
+            />
+            <label for="check">To-Do Lists For Today</label>
+            <br />
+          </form>
+        </div>
+        <i class="fa-solid fa-trash" id="trashcan"></i>
       </div>
-      <i class="fa-solid fa-trash" id="trashcan"></i>
     </header>
     <script src="index.js"></script>
   </body>

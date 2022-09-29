@@ -22,7 +22,13 @@ header {
 
 #header-el {
   text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+#header-el2 {
   color: #5f9341;
+  text-align: center;
   padding-bottom: 20px;
 }
 
@@ -33,7 +39,8 @@ header {
   box-sizing: border-box;
   border: 1px solid #5f9341;
   padding-inline-start: 10px;
-  padding-inline-end: 60px;
+  /* was 60px previously */
+  padding-inline-end: 100px;
   margin-bottom: 5px;
   font-size: 20px;
 }
@@ -52,15 +59,20 @@ div.input {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 15px;
+  /* margin-left: 15px; */
+  padding-right: 15px;
+  width: 100%;
 }
 
 div.input i {
   font-size: 50px;
   position: relative;
   right: 45px;
-  color: green;
+  bottom: 2px;
+  /* color: green; */
+  color: blue;
   cursor: pointer;
+  width: 0;
 }
 
 #input-btn:active {
@@ -84,12 +96,18 @@ div.input i {
 }
 
 #trashcan {
-  color: green;
-  text-align: center;
+  /* color: green; */
+  /* color: red; */
+  background: linear-gradient(to right top, red, blue);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
   width: 100%;
-  font-size: 40px;
+  text-align: center;
+  font-size: 35px;
   margin-top: 20px;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 #trashcan:active {
@@ -102,4 +120,16 @@ input[type="checkbox"]:checked + label {
   font-size: 18px;
   color: red !important;
   transition: all 0.5s !important;
+}
+
+div.card {
+  width: auto;
+  height: auto;
+  background-color: #1a1919;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin: 0px 17px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
