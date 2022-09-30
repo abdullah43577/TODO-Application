@@ -51,11 +51,11 @@ inputBtn.addEventListener("click", function () {
   //pushing the value in the input field to the array myLists and checking to see if the input value is an empty string
   if (inputEl.value != "") {
     myLists.push(inputEl.value);
+    //setting inputEl.value to an empty string clears out the input field when the content has been added to the array
+    inputEl.value = "";
+    // saving the myLists array to localStorage (localStorages only accepts strings as input not objects or arrays, hence the need for the JSON.stringify)
+    localStorage.setItem("myLists", JSON.stringify(myLists));
+    console.log(myLists);
+    render(myLists);
   }
-  //setting inputEl.value to an empty string clears out the input field when the content has been added to the array
-  inputEl.value = "";
-  // saving the myLists array to localStorage (localStorages only accepts strings as input not objects or arrays, hence the need for the JSON.stringify)
-  localStorage.setItem("myLists", JSON.stringify(myLists));
-  console.log(myLists);
-  render(myLists);
 });
