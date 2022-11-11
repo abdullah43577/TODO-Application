@@ -20,6 +20,7 @@ header.innerHTML = `To-Do Lists For Today ${today}`;
 
 trash.addEventListener("dblclick", function () {
   let temporaryArray = [];
+
   for (let i = 0; i < myLists.length; i++) {
     if (!document.querySelector(`#check${i}`).checked) {
       temporaryArray.push(myLists[i]);
@@ -35,6 +36,7 @@ trash.addEventListener("dblclick", function () {
 
 function render(lists) {
   let listItems = "";
+
   for (let i = 0; i < lists.length; i++) {
     listItems += `<input type="checkbox" id="check${i}" name="list${i}" class="checks"/>
                        <label for="check${i}">
