@@ -9,3 +9,5 @@ Also, you get more done by focusing on high-value activities. Once you have a li
 You can checkout my TODO list Application that helps you get things done much quicker by prioritarizing your goals in a simple application.
 
 This was entirely built using HTML, CSS, and JAVASCRIPT only!!.
+
+![This is an image](Screenshot_57.png)
