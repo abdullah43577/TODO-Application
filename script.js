@@ -23,12 +23,12 @@ header2.innerHTML = today;
 trash.addEventListener("dblclick", function () {
   let temporaryArray = [];
 
-  for (let i = 0; i < myLists.length; i++) {
+  myLists.forEach((listItems, i) => {
     if (!document.querySelector(`#check${i}`).checked) {
       temporaryArray.push(myLists[i]);
     }
     console.log(temporaryArray);
-  }
+  });
   myLists = temporaryArray;
   //live reload function
   location.reload();
@@ -39,13 +39,13 @@ trash.addEventListener("dblclick", function () {
 function render(lists) {
   let listItems = "";
 
-  for (let i = 0; i < lists.length; i++) {
+  lists.forEach((items, i) => {
     listItems += `<input type="checkbox" id="check${i}" name="list${i}" class="checks"/>
                        <label for="check${i}">
                             ${lists[i]}
                         </label>
                         <br>`;
-  }
+  });
   check.innerHTML = listItems;
 }
 
